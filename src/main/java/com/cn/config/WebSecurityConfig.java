@@ -38,6 +38,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
+                .antMatchers("/test/test1").hasAnyAuthority("p1")  // 拥有p1权限，可以访问test1
+                .antMatchers("/test/test2").hasAnyAuthority("p2")  // 拥有p2权限，可以访问test2
                 .antMatchers("/test/**").authenticated()   // 这个请求必须认证通过
                 .anyRequest().permitAll()   // 除了上面的请求，其他的都可以放行、
                 .and()

@@ -27,8 +27,8 @@ public class LoginController {
      * @param httpSession
      * @return
              */
-    @RequestMapping(value = "/test/testSession1",produces = "text/plain;charset=utf-8" )
-    public String testSession1(HttpSession httpSession){
+    @RequestMapping(value = "/test/test1",produces = "text/plain;charset=utf-8" )
+    public String test1(HttpSession httpSession){
         String fullname = null;
 
 
@@ -41,8 +41,8 @@ public class LoginController {
      * @param httpSession
      * @return
      */
-    @RequestMapping(value = "/test/testSession2",produces = "text/plain;charset=utf-8" )
-    public String testSession2(HttpSession httpSession){
+    @RequestMapping(value = "/test/test2",produces = "text/plain;charset=utf-8" )
+    public String test2(HttpSession httpSession){
         String fullname = null;
         return fullname+"访问资源";
     }
