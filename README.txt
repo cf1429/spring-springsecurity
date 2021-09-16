@@ -1,0 +1,5 @@
+此项目是基于springsecurity的认证授权实现：
+1、springsecurity提供了授权，认证，拦截器的实现，不需要我们自己定义拦截器
+2、在springsecurity中配置用户查询，密码编译，安全拦截
+3、将springsecurity配置加载到spring容器里，即在ApplicationConfig添加springsecurity的配置
+4、初始化springsecurity
